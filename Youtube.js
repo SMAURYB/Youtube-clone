@@ -1,12 +1,9 @@
-// import {Cloudinary} from "@cloudinary/url-gen";
-// import {Transformation} from "@cloudinary/url-gen";
 
+let inputSearch = document.getElementById('search');
 
-// const cld = new Cloudinary({
-//     cloud: {
-//       cloudName: 'sergiomurybenedetti'
-//     }
-//   });
-  
-//   // cld.image returns a CloudinaryImage with the configuration set.
-//   const myImage = cld.image('sample'); 
+inputSearch.addEventListener('input', updateValue);
+
+function updateValue(e) {
+  let res = e.srcElement.value;
+  console.log(res);
+}
