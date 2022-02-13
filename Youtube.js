@@ -24,3 +24,21 @@ function lupeClick () {
   // imprimir el valor en el h1
   textHTML.innerHTML = text
 }
+
+//llamar boton que puede borrar
+let deleteButton = document.getElementById('delete-button')
+
+// escuchar al boton
+deleteButton.addEventListener('click', deleteButtonClick);
+
+//funcion
+function deleteButtonClick () {
+  //llamar al h1 del html
+  let textHTML2 = document.getElementById('text-inner')
+  // borrar el texto del h1, y asignarlo vacio
+  textHTML2.innerHTML = ''
+  // cogemos el boton y le quitamos la clase que tiene actualmente
+  deleteButton.classList.remove('delete-button-class')
+  // le asignamos una nueva clase
+  deleteButton.classList.add('delete-button-class2')
+}

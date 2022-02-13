@@ -214,3 +214,25 @@
  
 }
 
+.delete-button-class{
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.delete-button-class2{
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 20px;
+    background-color: red;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
