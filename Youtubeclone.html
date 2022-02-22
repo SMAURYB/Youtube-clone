@@ -7,48 +7,67 @@
         <script src="./p5.min.js"></script>
         <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
     </head>
-    <body class="frame">
-        <header-container class="header-container">
-            <header class="header">
-
-                <div class="container_1">
-                    <img  class="hamburger" src='./Images/hamburgermenu.svg' >
-                    <img  class="yt_logo" src='./Images/new-youtube-logo.svg' >
-                    <div class="co">CO </div>
+    <body>
+        <nav class="navbar">
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <img class="logo" src='https://res.cloudinary.com/sergiomurybenedetti/image/upload/v1644679515/new-youtube-logo_ydwawg.svg' >
+            
+            <div class="search-box">
+                <input class="search-bar" id="search" type="text" placeholder="Search video" float=left name="search" />
+                <button class="search-btn">
+                    <img src="https://res.cloudinary.com/sergiomurybenedetti/image/upload/v1644679515/icons8-search_qrufag.svg" alt="">
+                </button>
+            </div>
+            
+            <div class="user-options">
+                <img  class="icon" src='https://res.cloudinary.com/sergiomurybenedetti/image/upload/v1644679517/videocamera_iqcov9.svg' >
+                <img  class="icon" src='https://res.cloudinary.com/sergiomurybenedetti/image/upload/v1644679515/menu_grit_ewqban.svg' >
+                <img  class="icon" src='https://res.cloudinary.com/sergiomurybenedetti/image/upload/v1644679515/notification_vz5i3o.svg' >
+                <div class="user-dp">
+                    <img src="https://res.cloudinary.com/sergiomurybenedetti/image/upload/v1644955352/unnamed_dantha.jpg">
                 </div>
-
-                <div class="container_2">
-                    <div class="nav_bar">
-                        <input class="nav_bar_in" id="search" type="text" placeholder="Buscar video" float=left name="search" />
-                    </div>
-                        <div  id="lupe" class="lupe_box">
-                            <img  class="icons" src='./Images/icons8-search.svg' >
-                        </div>
-                    <div class="microphone-container">
-                        <div class="microphone-circle">
-                            <img  class="icons" src='./Images/microphone.svg' >
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container_3">
-                    <img  class="icons" src='./Images/videocamera.svg' >
-                    <img  class="icons" src='./Images/menu_grit.svg' >
-                    <img  class="icons" src='./Images/notification.svg' >
-                    <div class="s-circle">
-                        <p class="iduser" style="color: white">S</p>
-                    </div>
-                </div>
-            </header>
-        </header-container>
-        <body-box class="content">
-            <vertical_bar class="vertical_bar"></vertical_bar>
-            <video_grit class="video_grit">
-                <h1 id="text-inner"></h1>
-                <!-- <h1 class="texto-prevent">Texto preventivo</h1> -->
-                <button id="delete-button" class="delete-button-class">Delete input value</button>
-            </video_grit>
-        </body-box>
+            </div>
+            
+        </nav>
+        <!-- sidebar -->
+        <div class="side-bar">
+            <a href="#" class="links"><img class=icons src='https://res.cloudinary.com/sergiomurybenedetti/image/upload/v1644955350/icons8-home_zfiji5.svg'>Inicio</a>
+            <a href="#" class="links"><img class=icons src='https://res.cloudinary.com/sergiomurybenedetti/image/upload/v1644955350/icons8-compass-100_pw9vln.png'>Explorar</a>
+            <a href="#" class="links"><img class=icons src='https://res.cloudinary.com/sergiomurybenedetti/image/upload/v1644955353/icons8-video-playlist-100_mxqrlq.png'>Suscripciones</a>
+            <hr class="separator">
+            <a href="#" class="links"><img class=icons src='https://res.cloudinary.com/sergiomurybenedetti/image/upload/v1644955353/icons8-movies-folder-80_vzzdh0.png'>Originales</a>
+            <a href="#" class="links"><img class=icons src='https://res.cloudinary.com/sergiomurybenedetti/image/upload/v1644955352/time-machine_trfz1l.png'>Historial</a>
+            <a href="#" class="links"><img class=icons src='https://res.cloudinary.com/sergiomurybenedetti/image/upload/v1644955995/icons8-clock_kidfsg.svg'>Ver más tarde</a>
+            <a href="#" class="links"><img class=icons src='https://res.cloudinary.com/sergiomurybenedetti/image/upload/v1644955350/icons8-next-96_blji4w.png'>Mis videos</a>
+            <a href="#" class="links"><img class=icons src='https://res.cloudinary.com/sergiomurybenedetti/image/upload/v1644955995/icons8-download-64_ppravz.png'>Descargas</a>
+            <a href="#" class="links"><img class=icons src='https://res.cloudinary.com/sergiomurybenedetti/image/upload/v1644955353/like_o8n9z7.png'>Videos que me gustan</a>
+            <a href="#" class="links"><img class=icons src='https://res.cloudinary.com/sergiomurybenedetti/image/upload/v1644955995/icons8-arrow-96_fgyd9a.png'>Mostrar más</a>
+            
+        </div>
+        <!-- filters -->
+        <div class="filters">
+            <button class="filter-options">Todo</button>
+            <button class="filter-options">CSS</button>
+            <button class="filter-options">Frontend</button>
+            <button class="filter-options">HTML</button>
+            <button class="filter-options">Marvel</button>
+            <button class="filter-options">Platzy</button>
+            <button class="filter-options">JavaScript</button>
+            <button class="filter-options">Machine Learning</button>
+            <button class="filter-options">Netflix</button>
+            <button class="filter-options">Cine Colombia</button>
+            <button class="filter-options">Banco de la República</button>
+            <button class="filter-options">Google Forms</button>
+            <button class="filter-options">Universidad del Norte</button>
+            <button class="filter-options">Disney</button>
+        </div>
+        <!-- videos -->
+        <div class="video-container">
+        </div>
         <script src="./Youtube.js"></script>
     </body>
 </html>
